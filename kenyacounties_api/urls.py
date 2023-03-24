@@ -22,5 +22,6 @@ from kenyacounties import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('counties/',views.allCounties, name='allcounties'),
-    re_path(r'^subcounties/$', views.subcountiesInCounty, name='subcounties')
+    re_path(r'^subcounties/$', views.subcountiesInCounty, name='subcounties'),
+    path('subcounty',views.subcountyForPoint, name='subcounty')
 ]

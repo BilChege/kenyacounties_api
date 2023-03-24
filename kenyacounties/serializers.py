@@ -18,3 +18,7 @@ class CountySerializer(serializers.Serializer):
     type_field = serializers.CharField(max_length=9)
     date_field = serializers.CharField(max_length=10)
     # adminarea = serializers.CharField(max_length=9)
+
+class PointSerializer(serializers.Serializer):
+    latitude = serializers.FloatField()
+    longitude = serializers.FloatField()
